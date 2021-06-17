@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+        <h1>登録した地魚を編集します</h1>
+            <form role="form" action="/update/{{.ID}}" method="POST">
+                <div>ID : {{.ID}}</div>
+                <label for="name">名前：</label><input value="{{.Name}}" type="text" name="name"><br />
+                <label for="origin">産地：</label><input value="{{.Origin}}" type="text" name="origin">
+                <button type="submit">更新</button>
+            </form>
+    </body>
+</html>

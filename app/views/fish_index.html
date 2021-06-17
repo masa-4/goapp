@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    </head>
+    <body>
+        <h1>おすすめの地魚一覧</h1>
+        <table>
+            <tr>
+                <th>No.</th>
+                <th>名前</th>
+                <th>産地</th>
+                <th></th>
+                <th></th>
+            </tr>
+            {{range .fish}}
+            <tr>
+                <th>{{.ID}}</th>
+                <th>{{.Name}}</th>
+                <th>{{.Origin}}</th>
+                <th><form action="/fish_edit/{{.ID}}" method="POST"><button type="submit">編集</button></form></th>
+                <th><form action="/fish_delete/{{.ID}}" method="POST"><button type="submit">削除</button></form></th>
+            </tr>
+            {{end}}
+        </table>
+    </body>
+</html>
