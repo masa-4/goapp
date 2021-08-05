@@ -1,8 +1,2 @@
 # goapp
-## joifdjaoifja
-
-```go
-func main(){
-
-}
-```
+## 簡単なCRUDアプリ
