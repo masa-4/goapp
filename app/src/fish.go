@@ -31,6 +31,7 @@ func dbInit() {
 
 	defer db.Close()
 	db.AutoMigrate(&Fish{})
+	db.AutoMigrate(&User{})
 }
 
 func GetFishAll() []Fish {

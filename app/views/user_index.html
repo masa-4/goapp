@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    </head>
+    <body>
+        <h1>ユーザ一覧</h1>
+        <table>
+            <tr>
+                <th>ユーザ番号</th>
+                <th>名前</th>
+                <th>Email</th>
+                <th></th>
+                <th></th>
+            </tr>
+            {{range .users}}
+            <tr>
+                <th>{{.ID}}</th>
+                <th>{{.Username}}</th>
+                <th>{{.Email}}</th>
+            </tr>
+            {{end}}
+        </table>
+    </body>
+</html>
